@@ -39,8 +39,20 @@ function updateDot(index)
 
 
 }
+
 const nextBtn = document.querySelector("#next");
 const prevBtn = document.querySelector("#prev");
 
 nextBtn.addEventListener("click", next);
 prevBtn.addEventListener("click", prev);
+
+const circleBtns = document.querySelectorAll('.circle');
+
+circleBtns.forEach(circBtn => {
+    circBtn.addEventListener("click", ()=>{
+        const btnIndex = circBtn.getAttribute('index');
+
+        while(currItem.getAttribute('index') != btnIndex)
+            next();
+    });
+});
