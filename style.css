@@ -1,0 +1,27 @@
+.spotlight-frame
+{
+    width: 70vw;
+    height: 50vh;
+
+    margin: auto;
+    background-color: aliceblue;
+}
+
+.spotlight-cover
+{
+    display: flex;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.item
+{
+    flex-shrink: 0;
+    width: 65vw;
+    height: 40vh;
+    background-color: gold;
+    border: 1px solid black;
+    
+}
