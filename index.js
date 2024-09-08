@@ -3,6 +3,9 @@ let currItem = cover.firstElementChild;
 function next()
 {
     currItem.style.display = "none";
-    currItem = currItem.nextElementSibling;
+    if(currItem.nextElementSibling)
+        currItem = currItem.nextElementSibling;
+    else
+        currItem = cover.firstElementChild;
     currItem.style.display = "block";
 }
