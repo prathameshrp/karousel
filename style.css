@@ -5,8 +5,19 @@
 
     margin: auto;
     background-color: aliceblue;
+    display: flex;
+    align-items: center;
 }
 
+
+.spotlight-frame span
+{
+ font-size: x-large;
+ font-weight: bolder;
+ display: inline-block;
+ cursor: pointer;
+ text-shadow: 1px 1px black;
+}
 .spotlight-cover
 {
     display: flex;
