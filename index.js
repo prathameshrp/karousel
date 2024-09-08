@@ -56,3 +56,7 @@ circleBtns.forEach(circBtn => {
             next();
     });
 });
+
+const runApp = (function initiate() {
+    setInterval(next, 2000);
+})();
