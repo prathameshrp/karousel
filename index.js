@@ -52,7 +52,7 @@ nextBtn.addEventListener("click",()=>
 prevBtn.addEventListener("click", ()=>{
     clearInterval(intervalID);
     prev();
-    intervalID = setInterval(next, 2000);
+    intervalID = setInterval(next, 2400);
 
 });
 
