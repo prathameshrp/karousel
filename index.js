@@ -28,13 +28,13 @@ function prev() {
 function updateDot(index)
 {
     const dot = document.querySelector(`span[index="${index}"]`);
+    const prevDot = document.querySelector(`span[index="${((index-2+4)%4+1)}"]`);
+    const nextDot = document.querySelector(`span[index="${(parseInt(index))%4+1}"]`);
+
     dot.style.backgroundColor = "#000";
-    console.log("current circle index: ", index);
-    console.log("prev circle index: ", ((index-2+4)%4+1));
-    console.log("next circle index", (parseInt(index))%4+1);
-    console.log("LineBreak");
-    document.querySelector(`span[index="${((index-2+4)%4+1)}"]`).style.backgroundColor = "#00000077";
-    document.querySelector(`span[index="${(parseInt(index))%4+1}"]`).style.backgroundColor = "#00000077";
+    dot.style.borderColor = "#000";
+   
+    [prevDot, nextDot].forEach(dot => dot.setAttribute('style', 'background-color = transparent; border-color: #00000077'));
 }
 const nextBtn = document.querySelector("#next");
 const prevBtn = document.querySelector("#prev");

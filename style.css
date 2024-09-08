@@ -72,7 +72,7 @@ div[index="4"]
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background-color: #00000077;
+    border: 1px solid #00000077;
 }
 .spot-circles span[index="1"]
 {
