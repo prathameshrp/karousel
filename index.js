@@ -43,8 +43,18 @@ function updateDot(index)
 const nextBtn = document.querySelector("#next");
 const prevBtn = document.querySelector("#prev");
 
-nextBtn.addEventListener("click", next);
-prevBtn.addEventListener("click", prev);
+nextBtn.addEventListener("click",()=> 
+    {   clearInterval(intervalID);
+        next();
+        intervalID = setInterval(next, 2000);
+        
+    });
+prevBtn.addEventListener("click", ()=>{
+    clearInterval(intervalID);
+    prev();
+    intervalID = setInterval(next, 2000);
+
+});
 
 const circleBtns = document.querySelectorAll('.circle');
 
@@ -54,9 +64,14 @@ circleBtns.forEach(circBtn => {
 
         while(currItem.getAttribute('index') != btnIndex)
             next();
+        clearInterval(intervalID);
+        intervalID = setInterval(next, 2000);
     });
 });
 
-const runApp = (function initiate() {
-    setInterval(next, 2000);
-})();
+let intervalID;
+const runApp = function initiate() {
+    intervalID = setInterval(next, 2000);
+};
+
+runApp();
