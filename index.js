@@ -18,3 +18,9 @@ function prev() {
         currItem = cover.lastElementChild;
     currItem.style.display = "block";
 }
+
+const nextBtn = document.querySelector("#next");
+const prevBtn = document.querySelector("#prev");
+
+nextBtn.addEventListener("click", next);
+prevBtn.addEventListener("click", prev);
