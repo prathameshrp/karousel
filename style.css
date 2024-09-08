@@ -37,19 +37,39 @@
     display: none;
 }
 
-div[index="1"]
+.spotlight-cover div[index="1"]
 {
     display: block;
 }
-div[index="2"]
+.spotlight-cover div[index="2"]
 {
     background-color: aqua;
 }
-div[index="3"]
+.spotlight-cover div[index="3"]
 {
     background-color: blue;
 }
 div[index="4"]
 {
     background-color: brown;
+}
+
+.spot-circles{
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    justify-content: center;
+    gap: 5px;
+
+}
+.circle
+{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.466);
 }
