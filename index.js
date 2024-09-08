@@ -34,7 +34,11 @@ function updateDot(index)
     dot.style.backgroundColor = "#000";
     dot.style.borderColor = "#000";
    
-    [prevDot, nextDot].forEach(dot => dot.setAttribute('style', 'background-color = transparent; border-color: #00000077'));
+    [prevDot, nextDot].forEach(dot => 
+        dot.setAttribute('style', 'background-color: transparent; border-color: #00000077;')
+    );
+
+
 }
 const nextBtn = document.querySelector("#next");
 const prevBtn = document.querySelector("#prev");
