@@ -31,8 +31,7 @@ function updateDot(index)
     const prevDot = document.querySelector(`span[index="${((index-2+4)%4+1)}"]`);
     const nextDot = document.querySelector(`span[index="${(parseInt(index))%4+1}"]`);
 
-    dot.style.backgroundColor = "#000";
-    dot.style.borderColor = "#000";
+    dot.setAttribute('style', 'background-color: #000; border-color: #000;');
    
     [prevDot, nextDot].forEach(dot => 
         dot.setAttribute('style', 'background-color: transparent; border-color: #00000077;')
