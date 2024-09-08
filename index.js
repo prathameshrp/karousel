@@ -9,3 +9,12 @@ function next()
         currItem = cover.firstElementChild;
     currItem.style.display = "block";
 }
+
+function prev() {
+    currItem.style.display = "none";
+    if(currItem.previousElementSibling)
+        currItem = currItem.previousElementSibling;
+    else
+        currItem = cover.lastElementChild;
+    currItem.style.display = "block";
+}
