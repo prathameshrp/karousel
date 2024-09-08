@@ -27,12 +27,29 @@
     align-items: center;
     justify-content: center;
 }
-.item
+.spotlight-cover  div
 {
     flex-shrink: 0;
     width: 65vw;
     height: 40vh;
     background-color: gold;
     border: 1px solid black;
-    
+    display: none;
+}
+
+div[index="1"]
+{
+    display: block;
+}
+div[index="2"]
+{
+    background-color: aqua;
+}
+div[index="3"]
+{
+    background-color: blue;
+}
+div[index="4"]
+{
+    background-color: brown;
 }
